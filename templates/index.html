@@ -30,7 +30,7 @@
                     <li class="pure-menu-item">
                         <a href="https://www.linkedin.com/in/chiomaenemuo/" target="_blank" class="pure-menu-link">LinkedIn</a>
                     </li>
-		    <li class="pure-menu-item">
+                    <li class="pure-menu-item">
                         <a href="https://twitter.com/JakMike3" target="_blank" class="pure-menu-link">Twitter</a>
                     </li>
                 </ul>
@@ -38,7 +38,7 @@
         </ul>
     </div>
 
-    <form class="pure-form" action="{{ url_for('search') }}" method="POST">
+    <form class="pure-form" action="/search" method="POST">
         <input type="text" class="pure-input-rounded" name="search_word" placeholder="Enter a word">
         <button type="submit" class="pure-button">Search</button>
     </form>
