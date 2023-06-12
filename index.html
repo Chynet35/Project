@@ -1,107 +1,77 @@
-<!DOCTYPE html>
+<!DOCTYPE 
+html>
 <html>
 <head>
     <title>InspireMe App</title>
+    <link rel="icon" href="https://www.freeiconspng.com/thumbs/inspiration-icon/inspiration-icon-1.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
     <link rel="stylesheet" type="text/css" href="static/css/styles.css">
     <link rel="stylesheet" type="text/css" href="static/css/landing.css">
-    <link rel="icon" href="https://www.freeiconspng.com/thumbs/inspiration-icon/inspiration-icon-1.png">
+    <link rel="stylesheet" type="text/css" href="static/css/quote.css">
+    <script src="static/js/script.js"></script>
 
-    <header>
-        <div class="cover-image.jpg"></div>
-        <h1>Welcome to InspireMe </h1>
-        <p>Inspiration at your fingertips</p>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-        <a href="{{ url_for('rootpage') }}" class="cta-button">Visit the App</a> 
-    </header>
-</head>
-
-<body>
-    <section id="features">
-        <h2>Key Features</h2>
-        <div class="feature">
-            <div class="thumbnail">
-                <img src="static/images/random_quote 1.png" alt="random_quote 2.png" class="feature-image">
-            </div>
-            <div class="feature-content">
-                <h3>Random Quote</h3>
-                <p>Description<br>
-                    This feature generates a random quote from a predefined list of quotes.<br>
-                    It provides users with inspirational and motivational quotes to uplift their spirits,<br>
-                    or gain new perspectives.<br>
-                </p>
-            </div>
-        </div>
-        <div class="feature">
-            <div class="thumbnail">
-                <img src="static/images/quote search.png" alt="quote of the day.png" class="feature-image">
-            </div>
-            <div class="feature-content">
-                <h3>Quote Search</h3>
-                <p>Description<br>
-                    The "Quote of the Day" feature provides users with a carefully curated quote each day,<br>
-                    to inspire and uplift them. This feature ensures that users start their day with a meaningful quote that can motivate,<br>
-                    encourage, or provoke thought. The quote is handpicked from a collection of inspiring quotes <br>
-                    and is designed to resonate with users on a deep level.<br>
-                </p>
-            </div>
-        </div>
-        <div class="feature">
-            <div class="thumbnail">
-                <img src="static/images/contact.png" alt="landing page.png" class="feature-image">
-            </div>
-            <div class="feature-content">
-                <h3>Landing Page and Contact Information</h3>
-                <p>Description<br>
-                    The app has a landing page that introduces the InspireMe app.<br>
-                    It includes information about the app, such as its purpose and the team behind it.<br>
-                    The landing page also provides contact information, including links to the GitHub repository,<br>
-                    LinkedIn profiles, and Twitter accounts of the team members.<br>
-                </p>
-            </div>
-        </div>
-    </section>
     
-    <section id="about">
-        <h2>About InspireMe</h2>
-        <p>
-            InspireMe is a passion project driven by the belief in the transformative power of inspiration.<br>
-            We understand that a single quote or a moment of motivation can have a profound impact on our lives.<br>
-            That's why we created the InspireMe app, a user-friendly platform that delivers carefully curated quotes,<br>
-            and powerful affirmations right to your fingertips.<br>
-            Our mission is to make inspiration accessible to everyone, anytime and anywhere.<br>
-            Start your day with a fresh quote, save your favorites, and share them with your loved ones.<br>
-            Let inspiration guide you on your journey towards personal growth and success.<br>
-            Join the InspireMe community and embrace the power of inspiration to create positive change in your life.<br>
-            It is a Portfolio Project for Holberton School, showcasing skills and experiences in web development.<br>
-        </p>
-        <div class="team-members">
-            <div class="member">
-                <h3>Chioma Enemuo</h3>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/chiomaenemuo" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/Chynet35" target="_blank">GitHub</a></li>
-                    <li><a href="https://twitter.com/Amarach53971318" target="_blank">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="member">
-                <h3>Asomugha John</h3>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/asomugha-john-kenenna-75315b185/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/Jakmike" target="_blank">GitHub</a></li>
-                    <li><a href="https://twitter.com/Jakmike3" target="_blank">Twitter</a></li>
-                </ul>
-            </div>
-        </div>
-        <a href="https://github.com/Jakmike/MVP" target="_blank" class="cta-button">View Project Repository</a>
-    </section>
+        <div class="cover-image.jpg"></div>
+        <h1>WELCOME TO InspireME</h1>
+        <h2>Inspiration at your fingertips</h2>
 
-    <footer>
-        <p>© 2023 InspireMe. All rights reserved.</p>
-    </footer>
+    <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected">
+                <a href="/random-quote" id="randomquote" class="pure-menu-link">Random Quote</a>
+            </li>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="#" id="menuLink1" style="color:black" class="pure-menu-link">Contact</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a href="/Home" class="pure-menu-link">Landing Page</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="https://github.com/Jakmike/MVP" target="_blank" class="pure-menu-link">Github</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="https://www.linkedin.com/in/chiomaenemuo/" target="_blank" class="pure-menu-link">LinkedIn</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="https://twitter.com/JakMike3" target="_blank" class="pure-menu-link">Twitter</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+        <form class="pure-form" action="/search" method="POST">
+            <input type="text" class="pure-input-rounded" name="search_word" placeholder="Enter a word">
+            <button type="submit" class="pure-button">Search</button>
+        </form>
+    
+</head>
+<body>
+    <p>
+        The only way to do great work is to love what you do.<br>
+        Innovation distinguishes between a leader and a follower.<br>
+        Life is 10% what happens to us and 90% how we react to it.<br>
+        The only way to do great work is to love what you do.<br>
+        If you can dream it, you can do it.<br>
+        The only person you are destined to become is the person you decide to be.<br>
+        The best way to predict the future is to create it.<br>
+        The only way to fail is to give up.<br>
+    </p>
+
+    <form class="pure-form">
+        <fieldset>
+            <legend>Sign up for our monthly newsletter</legend>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <label for="default-remember">
+                <input type="checkbox" id="default-remember" /> Remember me
+            </label>
+            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+        </fieldset>
+    </form>
+
+
+    <script src="static/js/script.js"></script>
+
 </body>
 </html>
